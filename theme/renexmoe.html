@@ -16,7 +16,13 @@
 />
 <title><!--Title--></title>
 <meta name="description" content="A Onemanager-PHP site with Theme-renexmoe" />
-<link rel="stylesheet" href="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/css/app.css"><meta name="theme-color" content="#fff" />
+<link rel="stylesheet" href="https://cdn1.tianli0.top/gh/itsHenry35/renexmoe-cdn@master/css/app.css"><meta name="theme-color" content="#fff" />
+<script src="https://cdn1.tianli0.top/gh/itshenry2233/cdn/plyr.polyfilled.js"></script>
+<link rel="stylesheet" href="https://cdn1.tianli0.top/gh/itshenry2233/cdn/plyr.css" />
+<script>
+  const plyrplayer = new Plyr('#player');
+</script>
+
 <!--BackgroundStart-->
 <style>
   body {
@@ -432,28 +438,22 @@
 <img class="mdui-img-fluid mdui-center mdui-m-t-5" src="<!--FileDownUrl-->" />
 <!--IsimgFileEnd-->
  <!--IsmusicFileStart-->
-<audio
-  class="mdui-center"
-  src="<!--FileDownUrl-->"
-  controls
-  autoplay
-  style="width: 100%; margin-top: 10%; margin-bottom: 10%"
-></audio>
+<audio id="plyrplayer" controls autoplay style="width: 100%; margin-top: 10%; margin-bottom: 10%">
+  <source src="<!--FileDownUrl-->" type="audio/mp3" />
+</audio>
 <!--IsmusicFileEnd-->
 
   <!--IsvideoFileStart-->
-<video
-  class="mdui-video-fluid"
-  controls
-  style="margin-top: 20px; margin-bottom: 20px"
->
-  <source src="<!--FileDownUrl-->" />
+
+<video id="plyrplayer" playsinline controls  style="margin-top: 20px; margin-bottom: 20px">
+  <source src="<!--FileDownUrl-->" type="video/mp4" />
   <p>
     Your browser doesn't support HTML5 video. Here is a
     <a href="<!--FileDownUrl-->">link to the video</a> instead.
   </p>
 </video>
 <!--IsvideoFileEnd-->
+
  <!--IsofficeFileStart-->
 <iframe
   id="office-a"
