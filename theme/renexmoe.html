@@ -436,13 +436,18 @@
 <img class="mdui-img-fluid mdui-center mdui-m-t-5" src="<!--FileDownUrl-->" />
 <!--IsimgFileEnd-->
  <!--IsmusicFileStart-->
+ <script>
+  const audioplayer = new Plyr('audio');
+</script>
 <audio id="audioplayer" controls autoplay style="width: 100%; margin-top: 10%; margin-bottom: 10%">
   <source src="<!--FileDownUrl-->" type="audio/mp3" />
 </audio>
 <!--IsmusicFileEnd-->
 
   <!--IsvideoFileStart-->
-
+<script>
+    const videoplayer = new Plyr('video');
+</script>
 <video id="videoplayer" playsinline controls  style="margin-top: 20px; margin-bottom: 20px">
   <source src="<!--FileDownUrl-->" type="video/mp4" />
   <p>
@@ -503,11 +508,6 @@
 <!--IsFileEnd-->
 
 </div>
-
-<script>
-  const videoplayer = new Plyr('video');
-  const audioplayer = new Plyr('audio');
-</script>
 
   </body>
   <!--IconValuesStart-->
