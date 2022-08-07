@@ -436,20 +436,14 @@
 <img class="mdui-img-fluid mdui-center mdui-m-t-5" src="<!--FileDownUrl-->" />
 <!--IsimgFileEnd-->
  <!--IsmusicFileStart-->
- <script>
-  const audioplayer = new Plyr('audio');
-</script>
 <audio id="audioplayer" controls autoplay style="width: 100%; margin-top: 10%; margin-bottom: 10%">
-  <source src="<!--FileDownUrl-->" type="audio/mp3" />
+  <source src="<!--FileDownUrl-->" />
 </audio>
 <!--IsmusicFileEnd-->
 
   <!--IsvideoFileStart-->
-<script>
-    const videoplayer = new Plyr('video');
-</script>
 <video id="videoplayer" playsinline controls  style="margin-top: 20px; margin-bottom: 20px">
-  <source src="<!--FileDownUrl-->" type="video/mp4" />
+  <source src="<!--FileDownUrl-->" />
   <p>
     Your browser doesn't support HTML5 video. Here is a
     <a href="<!--FileDownUrl-->">link to the video</a> instead.
@@ -514,5 +508,9 @@
   { "music":"audiotrack", "video":"ondemand_video", "img":"image",
   "pdf":"picture_as_pdf", "default":"insert_drive_file"}
   <!--IconValuesEnd-->
+  <script>
+    const videoplayer = new Plyr('video');
+    const audioplayer = new Plyr('audio');
+  </script>
   <script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@1b381f3c.a4f2dc4618121eac37e2.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@28a13772.98a11cc0c1cf2495c3d8.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@34e3d95a.2f8dbf552095a86a7f1b.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@798ab416.9ed46bb752b71a3c13a4.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@9c50beac.30955a99f08c9574cd14.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/app@f0256996.956ea71aa357ba3fdc28.js"></script><script src="https://cdn1.tianli0.top/gh/186526/renexmoe-cdn@v1.3/js/webpack-runtime.93708ab3e9cb84dcc01a.js"></script>
 </html>
